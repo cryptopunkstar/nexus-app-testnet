@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useCallback } from 'react'
 import { BrowserProvider, JsonRpcSigner, Contract } from 'ethers'
+import Image from 'next/image'
+ 
 
 const CONTRACT_ADDRESS = '0x6DDc7dd77CbeeA3445b70CB04E0244BBa245e011'
 const CONTRACT_ABI = [
@@ -186,9 +188,18 @@ export default function Home() {
       <div className="flex items-center justify-center min-h-screen">
         <div className="max-w-4xl w-full px-4">
           <div className="space-y-12 text-center">
+          <img 
+          src="./modularweb3.png" 
+          alt="Modularweb3 testnet Nexus"
+          width={250}
+          height={250}
+          />
             <h1 className="text-5xl font-light tracking-tight text-black">
-              Nexus Counter
+              Nexus testnet Counter with Modularweb3 !
             </h1>
+            <h2>Need a $NEX token ?</h2>
+            <a href="https://hub.nexus.xyz/">https://hub.nexus.xyz/</a>
+            
             
             <div className="space-y-8">
               {!isConnected ? (
