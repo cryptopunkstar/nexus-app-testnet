@@ -188,7 +188,7 @@ export default function Home() {
       <div className="flex items-center justify-center min-h-screen">
         <div className="max-w-4xl w-full px-4">
           <div className="space-y-12 text-center">
-          <img 
+          <Image 
           src="./modularweb3.png" 
           alt="Modularweb3 testnet Nexus"
           width={250}
